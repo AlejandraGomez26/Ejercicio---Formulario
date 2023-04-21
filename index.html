@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Formulario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+     
+ <form id="form-data" data-form>
+        <div class="field">
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" placeholder="Ej: Maria" data-field-nombres />
+        </div>
+        <div class="field">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos"  placeholder="Ej: Lopez" data-field-apellidos />
+        </div>
+        <div class="field">
+            <label for="salario">Salario:</label>
+            <input type="number" id="salario" name="salario" placeholder="Ej: 1576" data-field-salario />
+        </div>
+        <div class="field">
+            <label for="genero">Genero</label>
+            <select name="genero" id="genero" data-field-genero>
+                <option value="">Selecciona...</option>
+                <option value="femenino">Femenino</option>
+                <option value="masculino">Masculino</option>
+            </select>
+        </div>
+        <div class="field">
+            <label>Cargo</label>
+            <ul class="options">
+                <li class="option">
+                    <input type="checkbox" name="cargo" id="desarrollador" class="checkbox" value="desarrollador" data-field="cargo" />
+                    <label for="desarrollador">desarrollador</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" name="cargo" id="gerente" class="checkbox" value="gerente" data-field="cargo" />
+                    <label for="gerente">Gerente</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" name="cargo" id="lider" class="checkbox" value="lider" data-field="cargo" />
+                    <label for="lider">lider</label>
+                </li>
+                  <li class="option">
+                    <input type="checkbox" name="cargo" id="conductor" class="checkbox" value="conductor" data-field="cargo" />
+                    <label for="conductor">conductor</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" name="cargo" id="otro" class="checkbox" value="otro" data-field="cargo" />
+                    <label for="otro">Otro</label>
+                    <div class="nuevo-cargo" style="display: none;">
+                        <label for="nuevo-cargo">Ingrese cargo:</label>
+                        <input type="text" id="nuevo-cargo" class="nuevo-cargo" name="nuevo-cargo" placeholder="Ej: Administrador"/>
+                    </div>                </li>
+            </ul>
+        </div>
+      
+        <div class="field">
+            <button class ="btn-subir"type="submit">Subir</button>
+           
+        </div>
+    </form>
+
+  
+     <script src="./js/script.js">
+        
+     </script>
+    </body>
+</html>  

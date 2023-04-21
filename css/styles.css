@@ -1,0 +1,30 @@
+.field{
+    padding: .3rem;
+    margin-top: 1rem;
+}
+form {
+    width: 35%;
+    height: 75%;
+    border-radius: 30px;
+    padding: 0 2rem;
+    background-color: #669fcd;
+    font-size: 17px;
+   
+}
+
+input[type="text"], input[type ="number"],input[type ="email"]{
+    width: 100%;
+    padding: .5rem;
+}
+.btn-subir{
+    display: flex;justify-content: center; align-items: center;
+    border-radius: 6px;
+    height: 30px;
+    width: 88px;
+    font-weight: bold;
+}
+body{
+    background-color: #cae8ff;
+    display: flex; align-items: center;justify-content: center;
+    height: 100vh;
+}
